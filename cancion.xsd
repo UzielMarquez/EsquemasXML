@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="canciones" type="cancionesType"/>
+  <xs:complexType name="compositorType">
+    <xs:sequence>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Jin Young"/>
+            <xs:enumeration value="David Anthony"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="apellidos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Park"/>
+            <xs:enumeration value="Burke"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compositoresType">
+    <xs:sequence>
+      <xs:element type="compositorType" name="compositor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productorType">
+    <xs:sequence>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="JYP Entertainment"/>
+            <xs:enumeration value="Darkroom/Interscope Records"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productoresType">
+    <xs:sequence>
+      <xs:element type="productorType" name="productor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancionType">
+    <xs:sequence>
+      <xs:element name="duracion">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3:28"/>
+            <xs:enumeration value="2:55"/>
+            <xs:enumeration value="3:05"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="año">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2018"/>
+            <xs:enumeration value="2023"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="titulo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="What is Love"/>
+            <xs:enumeration value="Sleep Well"/>
+            <xs:enumeration value="Killin' Me Good"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="compositoresType" name="compositores"/>
+      <xs:element type="productoresType" name="productores"/>
+      <xs:element name="sello">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="One in a million!"/>
+            <xs:enumeration value="PetalsToThorns"/>
+            <xs:enumeration value="JYP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="artista" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Chaeyoung"/>
+            <xs:enumeration value="Nayeon"/>
+            <xs:enumeration value="Jihyo"/>
+            <xs:enumeration value="Momo"/>
+            <xs:enumeration value="Sana"/>
+            <xs:enumeration value="Mina"/>
+            <xs:enumeration value="Tzuyu"/>
+            <xs:enumeration value="Dahyun"/>
+            <xs:enumeration value="Jeongyeon"/>
+            <xs:enumeration value="d4vd"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancionesType">
+    <xs:sequence>
+      <xs:element type="cancionType" name="cancion" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE canciones SYSTEM "cancion.dtd">
+<canciones>
+    <cancion>
+        <duracion>3:28</duracion>
+        <año>2018</año>
+        <titulo>What is Love</titulo>
+        <compositores>
+            <compositor>
+                <nombre>Jin Young</nombre>
+                <apellidos>Park</apellidos>
+            </compositor>
+        </compositores>
+        <productores>
+            <productor>
+                <nombre>JYP Entertainment</nombre>
+            </productor>
+        </productores>
+        <sello>One in a million!</sello>
+        <artista>Chaeyoung</artista>
+        <artista>Nayeon</artista>
+        <artista>Jihyo</artista>
+        <artista>Momo</artista>
+        <artista>Sana</artista>
+        <artista>Mina</artista>
+        <artista>Tzuyu</artista>
+        <artista>Dahyun</artista>
+        <artista>Jeongyeon</artista>
+    </cancion>
+    <cancion>
+        <duracion>2:55</duracion>
+        <año>2023</año>
+        <titulo>Sleep Well</titulo>
+        <compositores>
+            <compositor>
+                <nombre>David Anthony</nombre>
+                <apellidos>Burke</apellidos>
+            </compositor>
+        </compositores>
+        <productores>
+            <productor>
+                <nombre>Darkroom/Interscope Records</nombre>
+            </productor>
+        </productores>
+        <sello>PetalsToThorns</sello>
+        <artista>d4vd</artista>
+    </cancion>
+    <cancion>
+        <duracion>3:05</duracion>
+        <año>2023</año>
+        <titulo>Killin' Me Good</titulo>
+        <compositores>
+            <compositor>
+                <nombre>Jin Young</nombre>
+                <apellidos>Park</apellidos>
+            </compositor>
+        </compositores>
+        <productores>
+            <productor>
+                <nombre>JYP Entertainment</nombre>
+            </productor>
+        </productores>
+        <sello>JYP</sello>
+        <artista>Jihyo</artista>
+    </cancion>
+</canciones>
